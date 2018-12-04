@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US" class="full-height">
+<head>
+	<title>QCA_MUSIC_FESTIVAL</title>
+	<link rel="stylesheet" type="text/css" href="custom.css">
+	<link rel="stylesheet" type="text/css" href="./vendor/bootstrap/bootstrap.min.css">
+	<link href="./vendor/bootstrap/material-icons.css" rel="stylesheet">
+	
+</head>
+
+<body ng-app="app">
+	<div class="wrapper" ng-controller="mainController" data-ng-init="init()">
+        <nav id="sidenav" class="container-fluid">
+			<div class="row" style="border-bottom: 4px solid black">
+				<div class="col-lg-4 weather_forecast">
+					<p class="current_time"> {{current_time}}</p>
+					<p >Partly Cloudy</p>
+					<img src="./images/Cloud.png" class="cloud_img">
+					<div class="row" style="margin-top: 2rem">
+						<div class="col-lg-5 temperature_img">
+							<img src="./images/temperature.png">
+						</div>
+						<div class="col-lg-7 temperature_value">
+							<p class="temperture_fer">{{tempF}}&deg;F</p>
+							<p class="temperture_cal">{{tempC}}&deg;C</p>
+						</div>
+	
+					</div>
+				</div>
+				<div class="col-lg-8">
+					<div class="row">
+						<div class="col-lg-12">
+							<p class="chart_heading">Temperature Forecast</p>
+							<canvas id="temperature_forecast"></canvas>
+						</div>
+						<div class="col-lg-12">
+							<div class="row wind_uv_row">
+								<div class="col-lg-6 wind_status_div">
+									<p class="chart_heading">Wind Status</p>
+									<canvas id="wind_status"></canvas>
+									<div class="chart_label">
+										<p class="label3"></br></p>
+										<p class="label1">2.5</p>
+										<p class="label2">mph</p>
+										<!-- <p class="label3">VSW</p> -->
+									</div>
+								</div>
+								<div class="col-lg-6 UV_index_div">
+									<p class="chart_heading">UV Index</p>
+									<canvas id="UV_index"></canvas>
+									<p class="uv_label"> 3 </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row" style="border-bottom: 4px solid black">
+					<!-- <video width="514" autoplay loop id="video">
+							<source src="./video/VID-20180104-WA0003.mov" type="video/mov">
+							Your browser does not support HTML5 video.
+						  </video> -->
+				<video width="514" height="240" autoplay loop muted id="video">
+					<source src="./video/video1.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video> 
+			</div>
+			<div class="row">
+				<video width="514"  autoplay loop muted  id="video">
+					<source src="./video/video2.mp4" type="video/mp4">
+					Your browser does not support HTML5 video.
+				</video>
+			</div>
+        </nav>
+        <div class="content">
+           <div ng-view></div>
+        </div>
+	</div>
+	
+	<script src="vendor/bootstrap/jquery.min.js"></script>
+	<script src="vendor/bootstrap/popper.min.js"></script>
+	<script src="vendor/bootstrap/bootstrap.min.js"></script> 
+
+	<script src="./vendor/chartjs/moment.js"></script>
+	<script src="./vendor/chartjs/Chart.min.js"></script>
+	
+	<script src="vendor/angular/angular.min.js"></script>
+	<script src="vendor/angular/angular-route.min.js"></script>
+
+	<script src="app.js"></script>
+	<script src="controllers/mainController.js"></script>
+	<script src="controllers/restRoom.js"></script>
+	<script src="controllers/merchCart.js"></script>
+	<script src="controllers/food.js"></script>
+	<script src="controllers/merchTeam.js"></script>
+	<script src="controllers/paramedics.js"></script>
+	<script src="controllers/security.js"></script>
+</body>
+</html>

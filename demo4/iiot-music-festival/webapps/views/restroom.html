@@ -1,0 +1,182 @@
+<!-- <div class="restRoom" >
+    <div ng-repeat="x in [1,2,3,4,5]">
+        <img src="../images/Male-female.png" id="{{'image'+$index}}">
+    </div>
+    <div class="row content_info">
+        <div class="col-lg-2">
+            <div class="info_content">
+                <span class="info-heading">RESTROOMS</span>
+                <img class="info_img" src="./images/Restrooms.png">
+            </div>
+        </div>
+        <div class="col-lg-10 restroom_row">
+            <div class="container-fluid">
+                <div class="row justify-content-between">
+                    <div class="col-lg-2 restroom_content">
+                        <div class="row">
+                            <div class="col-lg-8 screen_info_chart">
+                                <p class="capacity">Capacity</p>
+                                <canvas id="capacity1"></canvas>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="wait_time">Wait Time</p>
+                                <p class="time">01:50</p>											
+                            </div>
+                        </div>
+                        <p class="location">LOCATION1</p>
+                    </div>
+                    <div class="col-lg-2 restroom_content">
+                        <div class="row">
+                            <div class="col-lg-8 screen_info_chart">
+                                <p class="capacity">Capacity</p>
+                                <canvas id="capacity2"></canvas>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="wait_time">Wait Time</p>
+                                <p class="time">00:20</p>											
+                            </div>
+                        </div>
+                        <p class="location">LOCATION2</p>
+                    </div>
+                    <div class="col-lg-2 restroom_content">
+                        <div class="row">
+                            <div class="col-lg-8 screen_info_chart">
+                                <p class="capacity">Capacity</p>
+                                <canvas id="capacity3"></canvas>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="wait_time">Wait Time</p>
+                                <p class="time">00:43</p>											
+                            </div>
+                        </div>
+                        <p class="location">LOCATION3</p>
+                    </div>
+                    <div class="col-lg-2 restroom_content">
+                        <div class="row">
+                            <div class="col-lg-8 screen_info_chart">
+                                <p class="capacity">Capacity</p>
+                                <canvas id="capacity4"></canvas>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="wait_time">Wait Time</p>
+                                <p class="time">02:30</p>											
+                            </div>
+                        </div>
+                        <p class="location">LOCATION4</p>
+                    </div>
+                    <div class="col-lg-2 restroom_content">
+                        <div class="row">
+                            <div class="col-lg-8 screen_info_chart">
+                                <p class="capacity">Capacity</p>
+                                <canvas id="capacity5"></canvas>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="wait_time">Wait Time</p>
+                                <p class="time">00:50</p>											
+                            </div>
+                        </div>
+                        <p class="location">LOCATION5</p>
+                    </div>
+                </div>						
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+<div class="restRoom">
+    <div ng-repeat="x in [1,2,3,4,5]">
+        <img src="../images/Male-female.png" id="{{'image'+$index}}">
+    </div>
+    <div class="row content_info" style="padding: 0.35rem">
+        <div class="col-lg-2">
+            <div class="info_content">
+                <span class="info-heading" style="font-size: 1.7rem;margin-top: 0rem">RESTROOMS</span>
+                <img class="info_img" src="./images/Restrooms.png">
+            </div>
+        </div>
+        <div class="col-lg-10 restroom-container-fluid">
+            <div class="card-deck">
+                <div class="card ">
+                    <div class="card-body restroom_cardbody">
+                        <div class="row">
+                            <div class="col-lg-8 screen_info_chart">
+                                <p class="capacity">Capacity</p>
+                                <canvas id="capacity1"></canvas>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="wait_time">Wait Time</p>
+                                <p class="time">01:20</p>											
+                            </div>
+                        </div>
+                        <p class="location">LOCATION1</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body restroom_cardbody">
+                        <div class="row">
+                            <div class="col-lg-8 screen_info_chart">
+                                <p class="capacity">Capacity</p>
+                                <canvas id="capacity2"></canvas>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="wait_time">Wait Time</p>
+                                <p class="time">00:20</p>											
+                            </div>
+                        </div>
+                        <p class="location">LOCATION2</p>
+                    </div>
+                </div>
+
+                <div class="card ">
+                    <div class="card-body restroom_cardbody">
+                        <div class="row">
+                            <div class="col-lg-8 screen_info_chart">
+                                <p class="capacity">Capacity</p>
+                                <canvas id="capacity3"></canvas>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="wait_time">Wait Time</p>
+                                <p class="time">00:43</p>											
+                            </div>
+                        </div>
+                        <p class="location">LOCATION3</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body restroom_cardbody">
+                        <div class="row">
+                            <div class="col-lg-8 screen_info_chart">
+                                <p class="capacity">Capacity</p>
+                                <canvas id="capacity4"></canvas>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="wait_time">Wait Time</p>
+                                <p class="time">02:30</p>											
+                            </div>
+                        </div>
+                        <p class="location">LOCATION4</p>
+                    </div>
+                </div>  
+
+                <div class="card ">
+                    <div class="card-body  restroom_cardbody">
+                        <div class="row">
+                            <div class="col-lg-8 screen_info_chart">
+                                <p class="capacity">Capacity</p>
+                                <canvas id="capacity5"></canvas>
+                            </div>
+                            <div class="col-lg-4">
+                                <p class="wait_time">Wait Time</p>
+                                <p class="time">00:50</p>											
+                            </div>
+                        </div>
+                        <p class="location">LOCATION5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
